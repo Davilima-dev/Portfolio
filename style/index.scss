@@ -1,0 +1,166 @@
+$cor: "#f0f8ff";
+//paleta de cores da foto
+$gondola: #201211;
+$pale-slate: #ccc8c9;
+$spicy-mix: #80593e;
+$beaver: #8d6b55;
+$quincy: #5c3529;
+$pine-cone: #756256;
+$sandal: #a78b73;
+$natural-gray: #97908b;
+$zorba: #a7988f;
+$astral: #3c84a4;
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $pale-slate;
+
+    p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: $astral;
+
+    h2{
+        color: $quincy;
+        margin-left: 20px;
+        display: inline-block;
+        flex: 40%;
+    }
+
+    menu{
+        display: inline-block;
+
+        a{
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: large;
+            color: $pale-slate;
+
+            &:hover{
+                border-top: 2px solid $quincy;
+            }
+        }
+    }
+}
+
+
+main{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    background-color: $pale-slate;
+
+    #inicio{
+        margin-top: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .headline{
+            color: $spicy-mix;
+            flex: 50%;
+            h1{
+                color: $quincy;
+                margin-top: -20px;
+                font-size: 5rem;
+            }
+        }
+
+        .imagem{
+            flex: 25%;
+            img{
+                margin: 50px 0 0 0;
+                border-radius: 50%;
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+
+    #projetos{
+        margin-top: 100px;
+        margin-bottom: 150px;
+        height: 100%;
+        text-align: center;
+
+        h2{
+            color: $gondola;
+            font-size: 3rem;
+            margin-bottom: 70px;
+            text-transform: uppercase;
+        }
+
+        .projeto{
+            width: 50%;
+            margin: auto;
+            padding: 10px 0 0 0;
+            background-color: $natural-gray;
+            border-radius: 5px;
+
+            h3{
+                color: $quincy;
+            }
+
+            p{
+                padding: 20px;
+                color: $spicy-mix;
+            }
+
+            a{
+                color: $pine-cone;
+            }
+        }
+    }
+
+    #contato{
+        color: $gondola;
+        margin-top: 100px;
+        margin-bottom: 70px;
+
+        h3{
+            text-transform: uppercase;
+        }
+
+        a{
+            padding: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+.rodape{
+    height: 200px;
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, $gondola, $quincy);
+    color: $pale-slate;
+}

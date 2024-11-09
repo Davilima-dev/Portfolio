@@ -1,0 +1,16 @@
+@media screen and (max-width:700px){
+    nav{
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav menu a:hover{
+        border-bottom: 1px #ccc8c9;
+    }
+    #inicio{
+        flex-direction: column;
+    }
+    main #projetos .projeto{
+        width: 90%;
+    }
+}

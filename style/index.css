@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ccc8c9;
+}
+body p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+  background-color: #3c84a4;
+}
+nav h2 {
+  color: #5c3529;
+  margin-left: 20px;
+  display: inline-block;
+  flex: 40%;
+}
+nav menu {
+  display: inline-block;
+}
+nav menu a {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: large;
+  color: #ccc8c9;
+}
+nav menu a:hover {
+  border-top: 2px solid #5c3529;
+}
+
+main {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  background-color: #ccc8c9;
+}
+main #inicio {
+  margin-top: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main #inicio .headline {
+  color: #80593e;
+  flex: 50%;
+}
+main #inicio .headline h1 {
+  color: #5c3529;
+  margin-top: -20px;
+  font-size: 5rem;
+}
+main #inicio .imagem {
+  flex: 25%;
+}
+main #inicio .imagem img {
+  margin: 50px 0 0 0;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+}
+main #projetos {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  height: 100%;
+  text-align: center;
+}
+main #projetos h2 {
+  color: #201211;
+  font-size: 3rem;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+main #projetos .projeto {
+  width: 50%;
+  margin: auto;
+  padding: 10px 0 0 0;
+  background-color: #97908b;
+  border-radius: 5px;
+}
+main #projetos .projeto h3 {
+  color: #5c3529;
+}
+main #projetos .projeto p {
+  padding: 20px;
+  color: #80593e;
+}
+main #projetos .projeto a {
+  color: #756256;
+}
+main #contato {
+  color: #201211;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+main #contato h3 {
+  text-transform: uppercase;
+}
+main #contato a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.rodape {
+  height: 200px;
+  width: 100%;
+  margin-top: 100px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #201211, #5c3529);
+  color: #ccc8c9;
+}/*# sourceMappingURL=index.css.map */
