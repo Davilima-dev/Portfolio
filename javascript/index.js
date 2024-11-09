@@ -1,4 +1,4 @@
-let data = new Date().getHours(22);
+let data = new Date().getHours();
 
 if (data > 1 && data <= 12){
     document.getElementById("perfil").innerHTML = "Bom dia";
