@@ -7,6 +7,9 @@
         justify-content: center;
         align-items: center;
     }
+    header nav ul{
+        display: none;
+    }
     nav menu a:hover{
         border-bottom: 1px #ccc8c9;
     }
@@ -15,10 +18,5 @@
     }
     main #projetos .projeto{
         width: 90%;
-    }
-}
-@media screen and (max-width:500px) {
-    nav a{
-        display: none;
     }
 }
