@@ -17,3 +17,8 @@
         width: 90%;
     }
 }
+@media screen and (max-width:500px) {
+    nav a{
+        display: none;
+    }
+}
