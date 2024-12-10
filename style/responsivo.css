@@ -10,7 +10,7 @@
     nav menu a:hover{
         border-bottom: 1px #ccc8c9;
     }
-    #inicio{
+    #inicio,#sobre{
         flex-direction: column;
     }
     main #projetos .projeto{

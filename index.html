@@ -3,62 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de portfolio profissional digital">
+    <link rel="shortcut icon" href="image/portfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/responsivo.css">
     <title>Portfólio</title>
 </head>
 <body>
     <!--Barra de navegação do site-->
-    <nav>
-        <h2 id="perfil">Perfil</h2>
-        <menu>
-            <a href="#home">Ínicio</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </menu>
-    </nav>
+    <header>
+        <nav>
+            <h2 id="perfil">Perfil</h2>
+            <ul>
+                <a href="#home">Ínicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </ul>
+        </nav>
+    </header>
     <main id="home">
         <!--Seção home-->
         <section id="inicio">
             <div class="headline">
                 <h2>Eu sou</h2>
                 <h1>Davi Lima</h1>
-                <p>Estudante de Ciência da Computação, amante e entusiasta de tecnologia.</p>
+                <p>
+                    Um dedicado estudante de Ciência da Computação com uma paixão incansável por tecnologia e inovação. Neste espaço, compartilho meu entusiasmo e habilidades através de projetos que refletem minha jornada e crescimento no universo da programação e desenvolvimento web
+                </p>
             </div>
             <div class="imagem">
                 <img src="image/imgzap.png" alt="foto whatzapp">
             </div>
         </section>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Estudante de Ciência da Computação na Universidade Pitágoras Unopar Anhanguera. 💻 Entusiasta de novastecnologias, sempre buscando aprender eaplicar conhecimentos em projetospráticos. 🌱 Comprometido com odesenvolvimento contínuo e a busca porsoluções criativas e eficientes
+            </p>
+        </section>
+        </section>
         <!--Seção projetos-->
         <section id="projetos">
             <h2>Projetos</h2>
-                <div class="projeto">
-                    <h3>Projeto Android</h3>
-                    <p id="tt">Site de teste criado para praticar habilidades de HTML5 e CSS3.</p>
-                    <a href="https://davilima-dev.github.io/projeto-android/index.html.html" target="_blank">
-                        <img src="image/link.png" alt=""></a>
-                </div>
+            <p>
+                Aqui, você encontrará uma coleção dos meus principais projetos, desde aplicativos Android até websites responsivos. Cada projeto é uma peça do meu aprendizado e dedicação à excelência em desenvolvimento
+            </p>
+            <div class="projeto">
+                <h3>Projeto Android</h3>
+                <p id="tt">Site de teste criado parapraticar habilidades de HTML5 e CSS3.</p>
+                <a href="https://davilima-dev.github.io/projeto-android/index.html.html" target="_blank">
+                    <img src="image/link.png" alt="">
+                </a>
+            </div>
         </section>
         <!--Seção Contatos com links de minhas redes socias-->
         <section id="contato">
             <h3>Contate-me</h3>
-            <p>E-mail: dlima12435@gmail.com</p>
-            <a href="https://www.linkedin.com/in/davi-lima-12428b2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                <img src="image/linkedin32.png" alt="icone do linkedIn">
-            </a>
-            <a href="https://github.com/Davilima-dev" target="_blank">
-                <img src="image/github.png" alt="">
-            </a>
-            <a href="https://wa.me/559985227503" target="_blank">
-                <img src="image/whatsapp.png" alt="">
-            </a>
-            <a href="https://www.instagram.com/dav.ilima6/profilecard/?igsh=MWR5YmQ0NTl0MG5zZA==" target="_blank">
-                <img src="image/instagram.png" alt="">
-            </a>
+            <p>
+                Se você está procurando alguém apaixonado por tecnologia para colaborar em projetos, compartilhar ideias ou apenas trocar conhecimentos, sinta-se à vontade para me contatar! Meu e-mail é <a href="mailto:dlima12435@gmail.com">dlima12435@gmail.com</a> e você pode me encontrar também no:
+            </p>
+            <div id="links">
+                <a href="https://www.linkedin.com/in/davi-lima-12428b2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="image/linkedin32.png" alt="icone do linkedIn">
+                </a>
+                <a href="https://github.com/Davilima-dev" target="_blank">
+                    <img src="image/github.png" alt="">
+                </a>
+                <a href="https://wa.me/559985227503" target="_blank">
+                    <img src="image/whatsapp.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/dav.ilima6/profilecard/?igsh=MWR5YmQ0NTl0MG5zZA==" target="_blank">
+                    <img src="image/instagram.png" alt="">
+                </a>
+            </div>
+            <p>
+                Explore, inspire-se e acompanhe minha trajetória no mundo da tecnologia!
+            </p>
         </section>
     </main>
     <!--rodape-->
-    <footer class="rodape">
+    <footer class="rodape" role="contentinfo">
         <p>&copy; 2024 Davi Lima. Todos os direitos reservados.</p>
     </footer>
     <script src="javascript/index.js"></script>

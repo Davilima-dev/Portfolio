@@ -29,7 +29,7 @@ body{//alinhando os itens com flex
     }
 }
 
-nav{//fixei o nav na pagina
+nav,header{//fixei o nav na pagina
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,7 +47,7 @@ nav{//fixei o nav na pagina
         flex: 40%;
     }
 
-    menu{
+    ul{
         display: inline-block;
         a{
             margin-right: 5px;
@@ -68,44 +68,73 @@ nav{//fixei o nav na pagina
 
 main{
     font-size: 1.5rem;
+    justify-content: space-around;
     text-align: center;
     width: 100%;
     background-color: $pale-slate;
 
     #inicio{
+        display: flex;
         margin-top: 100px;
         height: 100%;
-        display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-
         .headline{
-            color: $spicy-mix;
             flex: 50%;
+            color: $spicy-mix;
             h1{
                 color: $quincy;
                 margin-top: -20px;
                 font-size: 5rem;
             }
+            p{
+                text-align: center;
+                padding: 20px;
+            }
         }
-
         .imagem{
-            flex: 25%;
+            flex: 40%;
+            height: 100%;
             img{
-                margin: 50px 0 0 0;
+                margin: 50px 0 50px 0;
                 border-radius: 50%;
                 width: 80%;
                 height: 80%;
             }
         }
     }
+    #sobre{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: $gondola;
+            font-size: 3rem;
+            margin-bottom: 70px;
+            text-transform: uppercase;
+        }
+        p{
+            color: $spicy-mix;
+            width: 80%;
+            padding: 20px;
+        }
+    }
 
     #projetos{//ajustando a seção projetos
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 100px;
         margin-bottom: 150px;
         height: 100%;
-        text-align: center;
+        p{
+            color: $spicy-mix;
+            width: 80%;
+            padding: 20px;
+        }
 
         h2{
             color: $gondola;
@@ -117,6 +146,7 @@ main{
         .projeto{//essa é a configuração padrão dos projetos
             width: 50%;
             margin: auto;
+            margin-top: 5%;
             padding: 10px 0 0 0;
             background-color: $natural-gray;
             border-radius: 5px;
@@ -137,12 +167,21 @@ main{
     }
 
     #contato{
+        display: flex;
+        flex-direction: column;
         color: $gondola;
         margin-top: 100px;
         margin-bottom: 70px;
+        align-items: center;
+        justify-content: center;
 
         h3{
             text-transform: uppercase;
+        }
+        p{
+            color: $spicy-mix;
+            width: 80%;
+            padding: 20px;
         }
 
         a{
@@ -153,10 +192,11 @@ main{
 }
 
 .rodape{
+    display: flex;
+    flex-direction: column;
     height: 200px;
     width: 100%;
     margin-top: 100px;
-    display: grid;
     text-align: center;
     align-items: center;
     justify-content: center;

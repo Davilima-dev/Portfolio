@@ -15,7 +15,7 @@ body p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-nav {
+nav, header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,16 +26,16 @@ nav {
   z-index: 1000;
   background-color: #3c84a4;
 }
-nav h2 {
+nav h2, header h2 {
   color: #5c3529;
   margin-left: 20px;
   display: inline-block;
   flex: 40%;
 }
-nav menu {
+nav ul, header ul {
   display: inline-block;
 }
-nav menu a {
+nav ul a, header ul a {
   margin-right: 5px;
   margin-left: 5px;
   padding: 10px;
@@ -44,47 +44,78 @@ nav menu a {
   font-size: large;
   color: #ccc8c9;
 }
-nav menu a:hover {
+nav ul a:hover, header ul a:hover {
   border-top: 2px solid #5c3529;
 }
 
 main {
   font-size: 1.5rem;
+  justify-content: space-around;
   text-align: center;
   width: 100%;
   background-color: #ccc8c9;
 }
 main #inicio {
+  display: flex;
   margin-top: 100px;
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 main #inicio .headline {
-  color: #80593e;
   flex: 50%;
+  color: #80593e;
 }
 main #inicio .headline h1 {
   color: #5c3529;
   margin-top: -20px;
   font-size: 5rem;
 }
+main #inicio .headline p {
+  text-align: center;
+  padding: 20px;
+}
 main #inicio .imagem {
-  flex: 25%;
+  flex: 40%;
+  height: 100%;
 }
 main #inicio .imagem img {
-  margin: 50px 0 0 0;
+  margin: 50px 0 50px 0;
   border-radius: 50%;
   width: 80%;
   height: 80%;
 }
+main #sobre {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+main #sobre h2 {
+  color: #201211;
+  font-size: 3rem;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+main #sobre p {
+  color: #80593e;
+  width: 80%;
+  padding: 20px;
+}
 main #projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 100px;
   margin-bottom: 150px;
   height: 100%;
-  text-align: center;
+}
+main #projetos p {
+  color: #80593e;
+  width: 80%;
+  padding: 20px;
 }
 main #projetos h2 {
   color: #201211;
@@ -95,6 +126,7 @@ main #projetos h2 {
 main #projetos .projeto {
   width: 50%;
   margin: auto;
+  margin-top: 5%;
   padding: 10px 0 0 0;
   background-color: #97908b;
   border-radius: 5px;
@@ -110,12 +142,21 @@ main #projetos .projeto a {
   color: #756256;
 }
 main #contato {
+  display: flex;
+  flex-direction: column;
   color: #201211;
   margin-top: 100px;
   margin-bottom: 70px;
+  align-items: center;
+  justify-content: center;
 }
 main #contato h3 {
   text-transform: uppercase;
+}
+main #contato p {
+  color: #80593e;
+  width: 80%;
+  padding: 20px;
 }
 main #contato a {
   padding: 10px;
@@ -123,10 +164,11 @@ main #contato a {
 }
 
 .rodape {
+  display: flex;
+  flex-direction: column;
   height: 200px;
   width: 100%;
   margin-top: 100px;
-  display: grid;
   text-align: center;
   align-items: center;
   justify-content: center;
