@@ -183,10 +183,20 @@ main{
             width: 80%;
             padding: 20px;
         }
-
-        a{
-            padding: 10px;
-            text-decoration: none;
+        #links{
+            a{
+                padding: 10px;
+                text-decoration: none;
+            }
+            a:hover{
+                border: 1px solid black;
+            }
+        }
+        #email{
+            color: $astral;
+        }
+        #email:hover{
+            text-decoration: underline;
         }
     }
 }
