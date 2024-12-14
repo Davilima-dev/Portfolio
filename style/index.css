@@ -11,8 +11,10 @@ body {
   flex-direction: column;
   background-color: #ccc8c9;
 }
-body p {
+body * p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: left;
+  text-indent: 2em;
 }
 
 nav, header {
@@ -72,8 +74,16 @@ main #inicio .headline h1 {
   font-size: 5rem;
 }
 main #inicio .headline p {
-  text-align: center;
+  text-indent: 2em;
+  text-align: justify;
   padding: 20px;
+}
+main #inicio .headline a {
+  text-decoration: none;
+  color: #3c84a4;
+}
+main #inicio .headline a:hover {
+  text-decoration: underline;
 }
 main #inicio .imagem {
   flex: 40%;

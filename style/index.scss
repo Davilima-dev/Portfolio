@@ -24,8 +24,10 @@ body{//alinhando os itens com flex
     flex-direction: column;
     background-color: $pale-slate;
 
-    p{
+    *p{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: left;
+        text-indent: 2em;
     }
 }
 
@@ -88,8 +90,16 @@ main{
                 font-size: 5rem;
             }
             p{
-                text-align: center;
+                text-indent: 2em;
+                text-align: justify;
                 padding: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: $astral;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
         .imagem{
