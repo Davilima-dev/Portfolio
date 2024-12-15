@@ -35,9 +35,12 @@ nav h2, header h2 {
   flex: 40%;
 }
 nav ul, header ul {
-  display: inline-block;
+  display: flex;
 }
-nav ul a, header ul a {
+nav ul li, header ul li {
+  list-style-type: none;
+}
+nav ul li a, header ul li a {
   margin-right: 5px;
   margin-left: 5px;
   padding: 10px;
@@ -46,7 +49,7 @@ nav ul a, header ul a {
   font-size: large;
   color: #ccc8c9;
 }
-nav ul a:hover, header ul a:hover {
+nav ul li a:hover, header ul li a:hover {
   border-top: 2px solid #5c3529;
 }
 
@@ -134,6 +137,9 @@ main #projetos h2 {
   text-transform: uppercase;
 }
 main #projetos .projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
   margin: auto;
   margin-top: 5%;
@@ -144,7 +150,7 @@ main #projetos .projeto {
 main #projetos .projeto h3 {
   color: #5c3529;
 }
-main #projetos .projeto p {
+main #projetos .projeto #tt {
   padding: 20px;
   color: #80593e;
 }
