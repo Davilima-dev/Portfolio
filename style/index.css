@@ -178,9 +178,6 @@ main #contato #links a {
   padding: 10px;
   text-decoration: none;
 }
-main #contato #links a:hover {
-  border: 1px solid black;
-}
 main #contato #email {
   color: #3c84a4;
 }
