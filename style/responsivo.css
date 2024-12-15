@@ -22,4 +22,7 @@
     main #projetos .projeto{
         width: 90%;
     }
+    *p{
+        text-align:justify;
+    }
 }
