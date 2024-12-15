@@ -19,7 +19,7 @@
     main #projetos .projeto{
         width: 90%;
     }
-    main *p{
+    *p{
         text-align:justify;
     }
 }
