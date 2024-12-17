@@ -184,6 +184,23 @@ main #contato #email {
 main #contato #email:hover {
   text-decoration: underline;
 }
+main #contato #btt-cv {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #3c84a4;
+  border: none;
+  border-radius: 10px;
+}
+main #contato #btt-cv:hover {
+  border-left: 1px solid #201211;
+  border-right: 1px solid #201211;
+}
+main #contato #btt-cv a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ccc8c9;
+  font-weight: bolder;
+}
 
 .rodape {
   display: flex;

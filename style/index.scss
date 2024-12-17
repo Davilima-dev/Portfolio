@@ -210,6 +210,23 @@ main{
         #email:hover{
             text-decoration: underline;
         }
+        #btt-cv{
+            margin-top: 20px;
+            padding: 15px;
+            background-color: $astral;
+            border: none;
+            border-radius: 10px;
+            &:hover{
+                border-left: 1px solid $gondola;
+                border-right: 1px solid $gondola;
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $pale-slate;
+                font-weight:bolder;
+            }
+        }
     }
 }
 
