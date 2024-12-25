@@ -118,10 +118,13 @@ main{
     #sobre{
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin: 100px 15px 15px;
         height: 100%;
         align-items: center;
         justify-content: center;
+        border: 1px solid;
+        background-color: $quincy;
+        border-radius:50px;
         h2{
             color: $gondola;
             font-size: 3rem;
@@ -129,7 +132,7 @@ main{
             text-transform: uppercase;
         }
         p{
-            color: $spicy-mix;
+            color: white;
             width: 80%;
             padding: 20px;
         }
@@ -155,7 +158,7 @@ main{
             text-transform: uppercase;
         }
 
-        .projeto{//essa é a configuração padrão dos projetos
+        #projeto{//essa é a configuração padrão dos projetos
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -165,16 +168,16 @@ main{
             padding: 10px 0 0 0;
             background-color: $natural-gray;
             border-radius: 5px;
-
             h3{
                 color: $quincy;
             }
-
+            &:hover{
+                border: 1px solid $astral;
+            }
             #tt{
                 padding: 20px;
                 color: $spicy-mix;
             }
-
             a{
                 color: $pine-cone;
             }
