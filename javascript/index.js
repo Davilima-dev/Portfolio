@@ -9,4 +9,21 @@ if (data > 1 && data <= 12){
 }else{
     document.getElementById("perfil").innerHTML = "initial";
 }
+//funcoes para a secao de habilidades
+function hard(){
+    let hard = document.getElementById("h").style.backgroundColor = "#252734";
+
+    let soft = document.getElementById("s").style.backgroundColor = "#2A2C39";
+
+    let texto = document.getElementById("tt2").style.display = "block";
+    let texto2 = document.getElementById("tt1").style.display = "none";
+}
+function soft(){
+    let hard = document.getElementById("h").style.backgroundColor = "#2A2C39";
+
+    let soft = document.getElementById("s").style.backgroundColor = "#252734";
+
+    let texto = document.getElementById("tt2").style.display = "none";
+    let texto2 = document.getElementById("tt1").style.display = "block";
+}
 

@@ -112,39 +112,74 @@ main #inicio .imagem img {
 }
 main #sobre {
   display: flex;
-  flex-direction: column;
   margin-top: 100px;
   padding-bottom: 20px;
+  text-align: center;
   height: 100%;
-  align-items: center;
-  justify-content: center;
   background-color: #2A2C39;
 }
-main #sobre h2 {
+main #sobre #resumo {
+  text-align: center;
+  width: 50%;
+}
+main #sobre #resumo h2 {
   font-size: 3rem;
   margin-bottom: 70px;
   text-transform: uppercase;
 }
-main #sobre p {
-  width: 80%;
+main #sobre #resumo p {
+  width: 90%;
+  text-align: justify;
   padding: 20px;
 }
-main #sobre #btt-cv {
+main #sobre #resumo #btt-cv {
   margin-top: 20px;
   padding: 15px;
   background-color: #2A2C39;
   border: 1px solid #3B3D49;
   border-radius: 10px;
 }
-main #sobre #btt-cv:hover {
+main #sobre #resumo #btt-cv:hover {
   background-color: #252734;
   transition: 0.3s;
 }
-main #sobre #btt-cv a {
+main #sobre #resumo #btt-cv a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ccc8c9;
   font-weight: bolder;
+}
+main #sobre #resumo2 {
+  width: 50%;
+}
+main #sobre #resumo2 button {
+  background-color: #2A2C39;
+  font-size: 1.5rem;
+  margin: 5px;
+  border: none;
+}
+main #sobre #resumo2 button h3 {
+  padding: 10px;
+  border-radius: 7px;
+}
+main #sobre #resumo2 button #s {
+  background-color: #252734;
+}
+main #sobre #resumo2 button #h {
+  background-color: #2A2C39;
+}
+main #sobre #resumo2 ul {
+  margin-left: 50px;
+}
+main #sobre #resumo2 ul li {
+  color: #fff;
+}
+main #sobre #resumo2 #tt1 {
+  text-align: left;
+}
+main #sobre #resumo2 #tt2 {
+  text-align: left;
+  display: none;
 }
 main #projetos {
   display: flex;

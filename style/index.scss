@@ -3,7 +3,7 @@ $c2: #252734;
 $c3: #2A2C39;
 $borda: #3B3D49;
 $fonte:#7D7F8A;
-//paleta de cores da foto escolhida
+/*paleta de cores da foto escolhida
 $gondola: #201211;
 $pale-slate: #ccc8c9;
 $spicy-mix: #80593e;
@@ -12,7 +12,7 @@ $quincy: #5c3529;
 $pine-cone: #756256;
 $sandal: #a78b73;
 $natural-gray: #97908b;
-$zorba: #a7988f;
+$zorba: #a7988f;*/
 $astral: #3c84a4;
 
 html{
@@ -129,37 +129,72 @@ main{
     }
     #sobre{
         display: flex;
-        flex-direction: column;
         margin-top: 100px;
         padding-bottom: 20px;
+        text-align: center;
         height: 100%;
-        align-items: center;
-        justify-content: center;
         background-color: $c3;
-        h2{
-            font-size: 3rem;
-            margin-bottom: 70px;
-            text-transform: uppercase;
-        }
-        p{
-            width: 80%;
-            padding: 20px;
-        }
-        #btt-cv{
-            margin-top: 20px;
-            padding: 15px;
-            background-color: $c3;
-            border: 1px solid $borda;
-            border-radius: 10px;
-            &:hover{
-                background-color: $c2;
-                transition: 0.3s;
-            }
-            a{
-                text-decoration: none;
+        #resumo{
+            text-align: center;
+            width: 50%;
+            h2{
+                font-size: 3rem;
+                margin-bottom: 70px;
                 text-transform: uppercase;
-                color: $pale-slate;
-                font-weight:bolder;
+            }
+            p{
+                width: 90%;
+                text-align: justify;
+                padding: 20px;
+            }
+            #btt-cv{
+                margin-top: 20px;
+                padding: 15px;
+                background-color: $c3;
+                border: 1px solid $borda;
+                border-radius: 10px;
+                &:hover{
+                    background-color: $c2;
+                    transition: 0.3s;
+                }
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $pale-slate;
+                    font-weight:bolder;
+                }
+            }
+        }
+        #resumo2{
+            width: 50%;
+            button{
+                background-color: $c3;
+                font-size:1.5rem ;
+                margin: 5px;
+                border: none;
+                h3{
+                    padding: 10px;
+                    border-radius: 7px;
+                }
+                #s{
+                    background-color: $c2;
+                }
+                #h{
+                    background-color: $c3;
+                }
+            }
+            ul{
+                margin-left:50px;
+                li{
+                    color: #fff;
+                }
+            }
+            #tt1{
+                text-align: left;
+            }
+            #tt2{
+                text-align: left;
+                display: none;
             }
         }
     }

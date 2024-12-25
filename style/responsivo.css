@@ -10,16 +10,21 @@
         justify-content: center;
         align-items: center;
     }
-    header nav ul{
+    header nav #menu{
         display: none;
-    }
-    nav menu a:hover{
-        border-bottom: 1px #ccc8c9;
     }
     #inicio,#sobre{
         flex-direction: column;
     }
     main #projetos .projeto{
+        width: 100%;
+
+    }
+    main #sobre #resumo{
+        width: 100%;
+    }
+    main #sobre #resumo2{
+        margin-top: 50px;
         width: 100%;
     }
     *p{
