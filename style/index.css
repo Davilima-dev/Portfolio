@@ -11,10 +11,15 @@ body {
   flex-direction: column;
   background-color: #ccc8c9;
 }
+body * h1, body h2, body h3, body h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
 body * p {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   text-indent: 2em;
+  color: #7D7F8A;
 }
 
 nav, header {
@@ -26,10 +31,9 @@ nav, header {
   justify-content: center;
   padding: 10px 0;
   z-index: 1000;
-  background-color: #3c84a4;
+  background-color: #252734;
 }
 nav h2, header h2 {
-  color: #5c3529;
   margin-left: 20px;
   display: inline-block;
   flex: 40%;
@@ -47,10 +51,19 @@ nav ul li a, header ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: large;
-  color: #ccc8c9;
+  color: #7D7F8A;
 }
 nav ul li a:hover, header ul li a:hover {
-  border-top: 2px solid #5c3529;
+  color: #ccc8c9;
+}
+nav ul #contact, header ul #contact {
+  color: #7D7F8A;
+  border: 1px solid #3B3D49;
+  border-radius: 10px;
+}
+nav ul #contact:hover, header ul #contact:hover {
+  background-color: #2A2C39;
+  color: #fff;
 }
 
 main {
@@ -58,7 +71,7 @@ main {
   justify-content: space-around;
   text-align: center;
   width: 100%;
-  background-color: #ccc8c9;
+  background-color: #252734;
 }
 main #inicio {
   display: flex;
@@ -69,12 +82,11 @@ main #inicio {
 }
 main #inicio .headline {
   flex: 50%;
-  color: #80593e;
 }
 main #inicio .headline h1 {
-  color: #5c3529;
   margin-top: -20px;
   font-size: 5rem;
+  text-transform: none;
 }
 main #inicio .headline p {
   text-indent: 2em;
@@ -101,24 +113,38 @@ main #inicio .imagem img {
 main #sobre {
   display: flex;
   flex-direction: column;
-  margin: 100px 15px 15px;
+  margin-top: 100px;
+  padding-bottom: 20px;
   height: 100%;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
-  background-color: #5c3529;
-  border-radius: 50px;
+  background-color: #2A2C39;
 }
 main #sobre h2 {
-  color: #201211;
   font-size: 3rem;
   margin-bottom: 70px;
   text-transform: uppercase;
 }
 main #sobre p {
-  color: white;
   width: 80%;
   padding: 20px;
+}
+main #sobre #btt-cv {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2A2C39;
+  border: 1px solid #3B3D49;
+  border-radius: 10px;
+}
+main #sobre #btt-cv:hover {
+  background-color: #252734;
+  transition: 0.3s;
+}
+main #sobre #btt-cv a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ccc8c9;
+  font-weight: bolder;
 }
 main #projetos {
   display: flex;
@@ -129,12 +155,10 @@ main #projetos {
   height: 100%;
 }
 main #projetos p {
-  color: #80593e;
   width: 80%;
   padding: 20px;
 }
 main #projetos h2 {
-  color: #201211;
   font-size: 3rem;
   margin-bottom: 70px;
   text-transform: uppercase;
@@ -147,36 +171,28 @@ main #projetos #projeto {
   margin: auto;
   margin-top: 5%;
   padding: 10px 0 0 0;
-  background-color: #97908b;
+  background-color: #2A2C39;
+  border: 1px solid #252734;
   border-radius: 5px;
 }
 main #projetos #projeto h3 {
-  color: #5c3529;
+  color: #fff;
 }
 main #projetos #projeto:hover {
   border: 1px solid #3c84a4;
 }
 main #projetos #projeto #tt {
   padding: 20px;
-  color: #80593e;
-}
-main #projetos #projeto a {
-  color: #756256;
 }
 main #contato {
   display: flex;
   flex-direction: column;
-  color: #201211;
+  background-color: #2A2C39;
   margin-top: 100px;
-  margin-bottom: 70px;
   align-items: center;
   justify-content: center;
 }
-main #contato h3 {
-  text-transform: uppercase;
-}
 main #contato p {
-  color: #80593e;
   width: 80%;
   padding: 20px;
 }
@@ -186,26 +202,10 @@ main #contato #links a {
 }
 main #contato #email {
   color: #3c84a4;
+  text-decoration: none;
 }
 main #contato #email:hover {
   text-decoration: underline;
-}
-main #contato #btt-cv {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #3c84a4;
-  border: none;
-  border-radius: 10px;
-}
-main #contato #btt-cv:hover {
-  border-left: 1px solid #201211;
-  border-right: 1px solid #201211;
-}
-main #contato #btt-cv a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ccc8c9;
-  font-weight: bolder;
 }
 
 .rodape {
@@ -213,10 +213,8 @@ main #contato #btt-cv a {
   flex-direction: column;
   height: 200px;
   width: 100%;
-  margin-top: 100px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #201211, #5c3529);
-  color: #ccc8c9;
+  background-color: #252734;
 }/*# sourceMappingURL=index.css.map */

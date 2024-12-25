@@ -1,4 +1,8 @@
-$cor: "#f0f8ff";
+$cor: #f0f8ff;
+$c2: #252734;
+$c3: #2A2C39;
+$borda: #3B3D49;
+$fonte:#7D7F8A;
 //paleta de cores da foto escolhida
 $gondola: #201211;
 $pale-slate: #ccc8c9;
@@ -23,11 +27,15 @@ body{//alinhando os itens com flex
     justify-content: center;
     flex-direction: column;
     background-color: $pale-slate;
-
+    *h1,h2,h3,h4{
+        color:#fff;
+        text-transform: uppercase;
+    }
     *p{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: Arial, Helvetica, sans-serif;
         text-align: left;
         text-indent: 2em;
+        color: $fonte
     }
 }
 
@@ -40,15 +48,12 @@ nav,header{//fixei o nav na pagina
     justify-content: center;
     padding: 10px 0;
     z-index: 1000;
-    background-color: $astral;
-
+    background-color:$c2;
     h2{
-        color: $quincy;
         margin-left: 20px;
         display: inline-block;
         flex: 40%;
     }
-
     ul{
         display: flex;
         li{
@@ -60,11 +65,19 @@ nav,header{//fixei o nav na pagina
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: large;
-                color: $pale-slate;
-    
-                &:hover{//faz os links de navegação ficarem com uma borda superior ao passar o mouse
-                    border-top: 2px solid $quincy;
+                color: $fonte;
+                &:hover{
+                    color: $pale-slate;
                 }
+            }
+        }
+        #contact{
+            color: $fonte;
+            border: 1px solid $borda;
+            border-radius: 10px;
+            &:hover{
+                background-color: $c3;
+                color: #fff;
             }
         }
     }
@@ -76,7 +89,7 @@ main{
     justify-content: space-around;
     text-align: center;
     width: 100%;
-    background-color: $pale-slate;
+    background-color: $c2;
     #inicio{
         display: flex;
         margin-top: 100px;
@@ -85,11 +98,10 @@ main{
         justify-content: center;
         .headline{
             flex: 50%;
-            color: $spicy-mix;
             h1{
-                color: $quincy;
                 margin-top: -20px;
                 font-size: 5rem;
+                text-transform: none;
             }
             p{
                 text-indent: 2em;
@@ -118,23 +130,37 @@ main{
     #sobre{
         display: flex;
         flex-direction: column;
-        margin: 100px 15px 15px;
+        margin-top: 100px;
+        padding-bottom: 20px;
         height: 100%;
         align-items: center;
         justify-content: center;
-        border: 1px solid;
-        background-color: $quincy;
-        border-radius:50px;
+        background-color: $c3;
         h2{
-            color: $gondola;
             font-size: 3rem;
             margin-bottom: 70px;
             text-transform: uppercase;
         }
         p{
-            color: white;
             width: 80%;
             padding: 20px;
+        }
+        #btt-cv{
+            margin-top: 20px;
+            padding: 15px;
+            background-color: $c3;
+            border: 1px solid $borda;
+            border-radius: 10px;
+            &:hover{
+                background-color: $c2;
+                transition: 0.3s;
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $pale-slate;
+                font-weight:bolder;
+            }
         }
     }
 
@@ -146,13 +172,11 @@ main{
         margin-bottom: 150px;
         height: 100%;
         p{
-            color: $spicy-mix;
             width: 80%;
             padding: 20px;
         }
 
         h2{
-            color: $gondola;
             font-size: 3rem;
             margin-bottom: 70px;
             text-transform: uppercase;
@@ -166,20 +190,17 @@ main{
             margin: auto;
             margin-top: 5%;
             padding: 10px 0 0 0;
-            background-color: $natural-gray;
+            background-color: $c3;
+            border: 1px solid $c2;
             border-radius: 5px;
             h3{
-                color: $quincy;
+                color: #fff;
             }
             &:hover{
                 border: 1px solid $astral;
             }
             #tt{
                 padding: 20px;
-                color: $spicy-mix;
-            }
-            a{
-                color: $pine-cone;
             }
         }
     }
@@ -187,17 +208,11 @@ main{
     #contato{
         display: flex;
         flex-direction: column;
-        color: $gondola;
+        background-color: $c3;
         margin-top: 100px;
-        margin-bottom: 70px;
         align-items: center;
         justify-content: center;
-
-        h3{
-            text-transform: uppercase;
-        }
         p{
-            color: $spicy-mix;
             width: 80%;
             padding: 20px;
         }
@@ -209,25 +224,9 @@ main{
         }
         #email{
             color: $astral;
-        }
-        #email:hover{
-            text-decoration: underline;
-        }
-        #btt-cv{
-            margin-top: 20px;
-            padding: 15px;
-            background-color: $astral;
-            border: none;
-            border-radius: 10px;
+            text-decoration: none;
             &:hover{
-                border-left: 1px solid $gondola;
-                border-right: 1px solid $gondola;
-            }
-            a{
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $pale-slate;
-                font-weight:bolder;
+                text-decoration: underline;
             }
         }
     }
@@ -238,12 +237,10 @@ main{
     flex-direction: column;
     height: 200px;
     width: 100%;
-    margin-top: 100px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, $gondola, $quincy);
-    color: $pale-slate;
+    background-color: $c2;
 }
 
 //esse foi a estilização do site

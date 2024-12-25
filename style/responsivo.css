@@ -20,7 +20,7 @@
         flex-direction: column;
     }
     main #projetos .projeto{
-        width: 90%;
+        width: 100%;
     }
     *p{
         text-align:justify;

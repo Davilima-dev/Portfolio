@@ -10,9 +10,3 @@ if (data > 1 && data <= 12){
     document.getElementById("perfil").innerHTML = "initial";
 }
 
-let contato = document.getElementById("ctt");
-contato.style.backgroundColor = "#ccc8c9";
-contato.style.color = "#3c84a4";
-contato.style.border = "none";
-contato.style.borderRadius = "5px";
-
