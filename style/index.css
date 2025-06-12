@@ -1,3 +1,4 @@
+/*paleta de cores da foto escolhida*/
 html {
   scroll-behavior: smooth;
 }
@@ -102,13 +103,11 @@ main #inicio .headline a:hover {
 }
 main #inicio .imagem {
   flex: 40%;
-  height: 100%;
 }
 main #inicio .imagem img {
   margin: 50px 0 50px 0;
-  border-radius: 50%;
   width: 80%;
-  height: 80%;
+  height: 30%;
 }
 main #sobre {
   display: flex;
@@ -228,6 +227,7 @@ main #contato {
   justify-content: center;
 }
 main #contato p {
+  text-align: center;
   width: 80%;
   padding: 20px;
 }
