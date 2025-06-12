@@ -105,9 +105,10 @@ main #inicio .imagem {
   flex: 40%;
 }
 main #inicio .imagem img {
+  border-radius: 50%;
   margin: 50px 0 50px 0;
   width: 80%;
-  height: 30%;
+  height: 50%;
 }
 main #sobre {
   display: flex;
@@ -173,12 +174,19 @@ main #sobre #resumo2 ul {
 main #sobre #resumo2 ul li {
   color: #fff;
 }
-main #sobre #resumo2 #tt1 {
+main #sobre #resumo2 #tt1 li {
+  margin: 10px 0;
+  font-size: 1.2rem;
   text-align: left;
 }
 main #sobre #resumo2 #tt2 {
   text-align: left;
   display: none;
+}
+main #sobre #resumo2 #tt2 li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  text-align: left;
 }
 main #projetos {
   display: flex;
